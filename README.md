@@ -100,7 +100,7 @@ All models use sklearn **Pipelines** with imputation + optional scaling, and are
 
 ---
 
-## 📈 Results
+##  Results
 
 | Model | AUC-ROC | CV AUC | Recall (Diabetic) | F1 (Diabetic) |
 |-------|---------|--------|-------------------|---------------|
