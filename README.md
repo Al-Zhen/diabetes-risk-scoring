@@ -1,4 +1,4 @@
-# 🩺 Diabetes Risk Scoring Model
+# Diabetes Risk Scoring Model
 ### A Healthcare Data Science Project
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Business Problem
+## Business Problem
 
 > *"Can we identify high-risk patients before they are formally diagnosed with Type 2 Diabetes, enabling earlier clinical intervention?"*
 
@@ -20,7 +20,7 @@ Early identification of diabetes risk can:
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project builds a **clinical risk scoring model** that takes patient diagnostic data and outputs a **0–100 Risk Score** with clinical tier classification (Low / Moderate / High / Very High), along with actionable clinical recommendations.
 
@@ -28,7 +28,7 @@ This project builds a **clinical risk scoring model** that takes patient diagnos
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **Source:** [Pima Indians Diabetes Database — UCI / Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 
@@ -48,7 +48,7 @@ This project builds a **clinical risk scoring model** that takes patient diagnos
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 diabetes-risk-scoring/
@@ -66,7 +66,7 @@ diabetes-risk-scoring/
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
 ### 1. SQL Exploration
 Used `sqlite3` to query patient data — simulating real healthcare data warehouse workflows (Redshift, Snowflake, BigQuery).
@@ -112,20 +112,20 @@ All models use sklearn **Pipelines** with imputation + optional scaling, and are
 
 ---
 
-## 🎯 Risk Score Output
+##  Risk Score Output
 
 The model converts predicted probabilities into a clinician-friendly risk score:
 
 | Score | Tier | Action |
 |-------|------|--------|
-| 0–20 | 🟢 Low Risk | Routine annual screening |
-| 20–40 | 🟡 Moderate Risk | Follow-up within 6 months; HbA1c test |
-| 40–65 | 🟠 High Risk | Diabetes prevention program; OGTT within 30 days |
-| 65–100 | 🔴 Very High Risk | Urgent evaluation; consider metformin prophylaxis |
+| 0–20 | Low Risk | Routine annual screening |
+| 20–40 | Moderate Risk | Follow-up within 6 months; HbA1c test |
+| 40–65 | High Risk | Diabetes prevention program; OGTT within 30 days |
+| 65–100 | Very High Risk | Urgent evaluation; consider metformin prophylaxis |
 
 ---
 
-## 🔑 Key Findings
+##  Key Findings
 
 1. **Glucose** is the strongest single predictor — patients with glucose > 140 mg/dL face dramatically elevated risk
 2. **BMI** is the top modifiable risk factor — obesity nearly doubles risk
@@ -135,7 +135,7 @@ The model converts predicted probabilities into a clinician-friendly risk score:
 
 ---
 
-## ⚠️ Limitations & Future Work
+## Limitations & Future Work
 
 - Dataset is limited to female patients of Pima Indian heritage — external validation required
 - Does not account for HbA1c, diet, activity level, or medications
@@ -143,7 +143,7 @@ The model converts predicted probabilities into a clinician-friendly risk score:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ```
 Python 3.10+
@@ -157,29 +157,6 @@ Python 3.10+
 
 ---
 
-## 🚀 How to Run
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/diabetes-risk-scoring.git
-cd diabetes-risk-scoring
-
-# Install dependencies
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-
-# Launch the notebook
-jupyter notebook diabetes_risk_scoring.ipynb
-```
 
 ---
 
-## 📬 Contact
-
-**[Your Name]**  
-Healthcare Data Analyst  
-[LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/yourusername) · [Email](mailto:you@email.com)
-
----
-
-*Dataset: Pima Indians Diabetes Database — UCI Machine Learning Repository / Kaggle*  
-*This project is for educational and portfolio purposes. Not intended for clinical use.*
